@@ -1,0 +1,26 @@
+@keyframes animFirst {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(20px, 20px);
+    }
+  }
+  
+  @keyframes animSecond {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-20px, -20px);
+    }
+  }
+  
+  @layer utilities {
+    .animate-animFirst {
+      animation: animFirst 5s linear infinite;
+    }
+    .animate-animSecond {
+      animation: animSecond 5s linear infinite 3s;
+    }
+  }
